@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Michael Phelps - contato</title>
+ 	<meta charset="utf-8">
+	<meta name="description" content="Trabalho acadêmico de PW1">
+	<meta name="keywords" content="Michael Phelps, olimpiadas, natação, esportes, medalhas">
+	<meta name="author" content="Caroline Othz Salles">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<link rel="icon" type="image/jpg" href="img/aneislogo.png">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script type="text/javascript">
+	function time() {
+    		var form = document.forms["form1"];
+    		var nome = form.nome.value;
+    		var email = form.email.value;
+
+    		if (nome === "") {
+      		alert("Por favor, preencha o campo nome");
+       		form.nome.focus();
+        	return false;
+    		}
+
+    		if (email === "") {
+        	alert("Por favor, preencha o campo com seu email");
+        	form.email.focus();
+       	 	return false;
+    		}
+
+    		alert("Dados enviados com sucesso!");
+   		form.reset();  // Reseta o formulário após envio
+    		return false;  // Previne o envio real do formulário para testar
+		}
+
+   	</script>
+</head>
+<body>
+    	<div id="menu">
+        	<img src="img/aneislogo.png" alt="Logotipo">
+        <ul id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="destaque.html">Destaque</a></li>
+            <li><a href="desafios.html">Desafios</a></li>
+            <li><a href="medalhas.html">Medalhas</a></li>
+            <li><a href="contato.html" class="ativa">Contato</a></li>
+        </ul>
+    </div>
+    <div id="contato">
+	<h1> Fale conosco!</h1>
+        <form name="form1" action="#" method="post" onsubmit="return time()">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" placeholder="Seu nome"><br>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="Seu email"><br>
+            Você gostou do site?  
+            <input type="radio" id="sim" name="resposta" value="sim"><label for="sim">Sim</label>
+            <input type="radio" id="nao" name="resposta" value="nao"><label for="nao">Não</label><br>
+            Comentário:<br>
+            <textarea name="comentario" cols="54" rows="20"></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+	<div align="right"><a href="#"><img src="img/ancora.png" width="50"></a></div>
+    <div id="footer">
+        <p>Caroline Salles 2024 - &copy; Todos os direitos reservados </p>
+        <p>Trabalho acadêmico sem fins lucrativos</p>
+    </div>
+</body>
+</html>
