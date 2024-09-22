@@ -1,0 +1,276 @@
+/*Arquivo css - olimpíadas*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	}
+
+body {
+	background: #e1f3ff;
+	font-family: "Century Gothic", Arial, sans-serif;
+	margin-top: 5px;
+	color: #000;
+	min-height: 100vh; /* Faz com que o footer fique na parte inferior */
+}
+
+/* Inicio do cabeçalho */
+
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Mantém os itens alinhados à esquerda */
+    width: 900px;
+    height: 140px;
+    margin: 0 auto 20px auto; /* Adiciona um espaço de 20px abaixo do menu */
+    background-color: #5A86B7;
+}
+
+#menu img {
+	max-width: 100px; /* Define a largura máxima */
+	max-height: 100px; /* Define a altura máxima */
+	}
+
+#nav {
+	list-style: none;
+	padding-left: 0;
+	display: flex;
+	gap: 15px;
+	margin-left: 20px; /* Aproxima o menu de navegação da logo */
+}
+
+#nav li {
+	display: inline; /* Remove o float e deixa os itens em linha */
+}
+
+/* Estilo do título do cabeçalho */
+
+#menu h1 {
+	display: block;
+	float: left;
+}
+
+/* Navegação */
+
+#nav a {
+	text-decoration: none; /* remove sublinha dos links */
+	text-transform: uppercase; /* texto em linha maiúsculas */
+	color: #fff;
+	font-weight: bold;
+	border-radius: 5px; /* Adicionado arredondamento */
+}
+
+#nav a:hover {
+	background-color: rgba(255, 255, 255, 0.1); /* Adicionado fundo ao passar o mouse */
+}
+
+ul#nav a.ativa {
+	border-bottom: 5px solid #1B5FAE; /* adiciona borda na página ativa */
+}
+
+/* Banner- pagina HOME */
+
+#banner {
+	width: 900px; /* largura */
+	height: 230px; /* altura */
+	margin: 0 auto; /* centraliza */
+	position: relative;
+}
+
+/* introducao*/
+
+#celia {
+	width: 900px; /* Largura da caixa */
+	margin: 0 auto 20px auto;
+	padding: 20px; /* Espaçamento interno para conteúdo */
+	background-color: #F0FFF0; /* Cor de fundo */
+ }
+
+#celia h1 {
+	font-size: 28px;
+	font-weight: bold;
+	color: #1B5FAE;
+	text-align: center; /* Centraliza o título */
+	margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+#celia p {
+	font-size: 18px;
+	color: #333;
+	text-align: center; /* Centraliza a frase */
+	margin-bottom: 20px; /* Espaçamento abaixo da frase */
+}
+
+/* Secao */
+
+#secao {
+	display: flex;
+	flex-wrap: wrap; /* Permite que os artigos "quebrem" para a próxima linha */
+	justify-content: space-between; /* Espaça os artigos de forma uniforme */
+}
+
+.artigo {
+	width: 48%; /* Cada artigo ocupa 48% da largura (com 2% de gap entre eles) */
+	margin-bottom: 15px; /* Espaço entre os artigos de cima e de baixo */
+	padding: 10px;
+}
+
+.artigo h2 {
+  	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.artigo p {
+	font-size: 14px;
+	text-align: justify;
+}
+
+/* Footer */
+
+#footer {
+	width: 900px;
+	margin: 0 auto;
+	background-color: #5A86B7;
+	padding: 20px;
+	text-align: center;
+}
+
+#footer p {
+	font-size: 12px;
+}
+
+/* Conteúdo da página SOBRE */
+
+#conteudo {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 900px; /* Largura */
+	margin: 0 auto 20px auto;
+	background: #F0FFF0;
+	min-height: 800px; /* Altura mínima maior */
+	padding: 20px; /* Adicionado padding para espaçamento interno */
+}
+
+.artigo {
+	width: 45%; /* Ajusta a largura para ocupar espaço proporcional */
+	margin: 10px 0; /* Margem entre os artigos */
+}
+
+.artigo p {
+	padding-top: 15px;
+	font-size: 17px;
+	text-align: justify;
+}
+
+/* Codificação da página Serviço */
+
+#conteudo1 {
+	width: 900px;
+	height: 400px;
+	background: #F0FFF0;
+	margin: 15px auto;
+	padding-left: 5px;
+}
+
+.artigo1 {
+	width: 350px;
+	margin: 5px 8px;
+	float: left;
+}
+
+.artigo1 h1 {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.artigo1 ul {
+	padding-top: 15px;
+	font-size: 17px;
+	list-style: none;
+	padding-left: 0;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+#conteudo {
+	flex: 1; /* O conteúdo principal ocupa o espaço restante */
+}
+
+/* Imagens */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.medalha img {
+    max-width: 50px; /* Ajuste o tamanho desejado */
+    height: auto;
+}
+
+#introducao {
+    width: 900px; /* Define a largura do contêiner de texto */
+    margin: 0 auto 20px auto; /* Centraliza o contêiner e adiciona margem inferior */
+    padding: 20px;
+    background-color: #F0FFF0; /* Cor de fundo suave */
+    text-align: center; /* Centraliza o texto */
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+}
+
+/*TEXTAREA*/
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 900px;
+    margin: 15px auto;
+    background-color: #F0FFF0;
+    padding: 20px; /* Melhor usar padding do que height */
+}
+
+textarea {
+    resize: none;
+    width: 100%; /* Ajustado para ocupar toda a largura do container pai */
+}
+
+/* Exemplo de correção no CSS da tabela */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 100%; /* Para que ocupe toda a largura disponível */
+}
+
+td, th {
+    text-align: center; /* Centraliza o texto nas células */
+}
+
+/*respansividade*/
+
+@media (max-width: 768px) {
+    #menu, #footer, #celia, #conteudo1, #introducao, #contato {
+        width: 100%; /* Largura total em telas menores */
+        padding: 10px; /* Ajusta o padding */
+    }
+
+    .artigo {
+        width: 100%; /* Cada artigo ocupa a largura total */
+    }
+
+    table {
+        width: 100%; /* A tabela ocupa a largura total */
+        font-size: 14px; /* Ajusta o tamanho da fonte na tabela */
+    }
+}
+
